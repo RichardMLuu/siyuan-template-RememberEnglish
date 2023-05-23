@@ -1,16 +1,15 @@
 {
-  "name": "template-sample",
-  "author": "Vanessa",
-  "url": "https://github.com/siyuan-note/template-sample",
-  "version": "0.0.1",
-  "minAppVersion": "2.9.0",
+  "name": "反向链接巧记单词",
+  "author": "nuistZPZ",
+  "url": "https://github.com/nuistZPZ/siyuan-template-RememberEnglish",
+  "version": "1.0.0",
   "displayName": {
-    "default": "Template Sample",
-    "zh_CN": "模板示例"
+    "default": "Skillful Memory",
+    "zh_CN": "反向链接巧记单词"
   },
   "description": {
-    "default": "This is a template sample",
-    "zh_CN": "这是一个模板示例"
+    "default": "Using backlinks to remember words, stringing together word relationships and reducing repetitive writing, the ultimate expectation is to achieve the effect of Wikipedia and the Taoist dictionary.",
+    "zh_CN": "使用反向链接记单词，串联单词关系，减少重复书写，最终期望实现维基百科、有道词典的效果。"
   },
   "readme": {
     "default": "README.md",
@@ -25,7 +24,6 @@
     "patreon": "",
     "github": "",
     "custom": [
-      "https://ld246.com/sponsor"
     ]
   }
 }

@@ -1,114 +1,83 @@
-[中文](https://github.com/siyuan-note/template-sample/blob/main/README_zh_CN.md)
+[中文](https://github.com/nuistZPZ/siyuan-template-RememberEnglish/blob/master/README_zh_CN.md)
 
-# SiYuan template sample
+# Reverse linking to remember words skillfully
 
-## Get started
+Share a set of templates used when memorizing words, used to record the inspiration associated with memorizing words, you need to download the pendant Note Backlink and Query first.
 
-* Make a copy of this repo as a template with the <kbd>Use this template</kbd> button, please note that the repo name
-  must be the same as the template name, the default branch must be `main`
-* Clone your repo to a local development folder. For convenience, you can place this folder in
-  your `{workspace}/data/templates/` folder
+ [langzhou/note-backlinks： 思源笔记挂件：类似 Roam Research，在文档页面内展示反向链接 (github.com)](https://github.com/langzhou/note-backlinks) 
 
-## Development
+ [Zuoqiu-Yingyi/widget-query： 一个将思源笔记数据库查询结果以表格样式渲染的挂件 |以表格样式呈现思源笔记数据库查询结果的小组件。 (github.com)](https://github.com/Zuoqiu-Yingyi/widget-query) 
 
-* template.json
-* icon.png (160*160)
-* preview.png (1024*768)
-* README*.md
-* *.md
 
-## template.json
 
-```json
-{
-  "name": "template-sample",
-  "author": "Vanessa",
-  "url": "https://github.com/siyuan-note/template-sample",
-  "version": "0.0.1",
-  "minAppVersion": "2.9.0",
-  "displayName": {
-    "default": "Template Sample",
-    "zh_CN": "模板示例"
-  },
-  "description": {
-    "default": "This is a template sample",
-    "zh_CN": "这是一个模板示例"
-  },
-  "readme": {
-    "default": "README.md",
-    "zh_CN": "README_zh_CN.md"
-  },
-  "i18n": [
-    "en_US",
-    "zh_CN"
-  ],
-  "funding": {
-    "openCollective": "b3log",
-    "patreon": "",
-    "github": "",
-    "custom": [
-      "https://ld246.com/sponsor"
-    ]
-  }
-}
+## Usage Scenarios
+
+Using backlinks allows us to remember words anywhere without the clutter of not finding them in relation to each other.
+
+Jot down a word on the fly and use the shortcut [[]] or UI to create a new page with that word as the title.
+
+![2023-05-22_101741](assets/2023-05-22_101741.png)
+
+
+
+
+
+## Example
+
+Each word is written on a separate page that is used to record all information about that word.
+
+![1684721435700](assets/1684721435700.png)
+
+Using the two-way links, you can jump to the related words page and also see which words are related to it.
+
+Take template for example, I have sentences elsewhere that reference template without me having to manually add this sentence to the example sentence in template, and I can find example sentences in template that I have used before.![1684721176339](assets/1684721176339-1684724617183.png)
+
+Use SQL to query recorded words to form your own unique word book. Provide templates to find all words, created in the last N days, updated in the last N days, alphabetical search, etc.
+
+### SQL parameters explanation
+
+#### General parameters
+
+- **hpath means the location where the file is stored**
+
+```
+hpath like "/%"  在/后面添加文件夹名称
 ```
 
-* `name`: Template name, must be the same as the repo name, and must be unique globally (no duplicate template names in the
-  marketplace)
-* `author`: Template author name
-* `url`: Template repo URL
-* `version`: Template version number, it is recommended to follow the [semver](https://semver.org/) specification
-* `minAppVersion`: Minimum version number of SiYuan required to use this template
-* `displayName`: Template display name, mainly used for display in the marketplace list, supports multiple languages
-    * `default`: Default language, must exist
-    * `zh_CN`, `en_US` and other languages: optional, it is recommended to provide at least Chinese and English
-* `description`: Template description, mainly used for display in the marketplace list, supports multiple languages
-    * `default`: Default language, must exist
-    * `zh_CN`, `en_US` and other languages: optional, it is recommended to provide at least Chinese and English
-* `readme`: readme file name, mainly used to display in the marketplace details page, supports multiple languages
-    * `default`: Default language, must exist
-    * `zh_CN`, `en_US` and other languages: optional, it is recommended to provide at least Chinese and English
-* `i18n`: Template supported language list
-* `funding`: Template sponsorship information
-    * `openCollective`: Open Collective name
-    * `patreon`: Patreon name
-    * `github`: GitHub login name
-    * `custom`: Custom sponsorship link list
+- **type means the type of the block**
 
-## Package
-
-No matter which method is used to compile and package, we finally need to generate a package.zip, which contains at
-least the following files:
-
-* icon.png
-* preview.png
-* README*.md
-* template.json
-* *.md
-
-## List on the marketplace
-
-* Generate the package.zip
-* Create a new GitHub release using your new version number as the "Tag version". See here for an
-  example: https://github.com/siyuan-note/template-sample/releases
-* Upload the file package.zip as binary attachments
-* Publish the release
-
-If it is the first release, please create a pull request to
-the [Community Bazaar](https://github.com/siyuan-note/bazaar) repository and modify the templates.json file in it. This
-file is the index of all community template repositories, the format is:
-
-```json
-{
-  "repos": [
-    "username/reponame"
-  ]
-}
+```
+type = "d" 中的d代表文档块
 ```
 
-After the PR is merged, the bazaar will automatically update the index and deploy through GitHub Actions. When releasing
-a new version of the template in the future, you only need to follow the above steps to create a new release, and you
-don't need to PR the community bazaar repo.
+- **content means the content of the block**
 
-Under normal circumstances, the community bazaar repo will automatically update the index and deploy every hour,
-and you can check the deployment status at https://github.com/siyuan-note/bazaar/actions.
+```
+
+```
+
+#### Query all words
+
+The limit 1000 is used because, by default, Siyuan only returns 64. If your word bank exceeds 1000, please replace it with a larger number. Same as below
+
+![1684851769970](assets/1684851769970.png)
+
+
+
+#### Query by word initials
+
+Replace the a in content like "a%" with the letter you are looking for
+
+![1684851616465](assets/1684851616465.png)
+
+#### Words created in the last N days
+
+Replace -1 of -1 day with the date you want, such as the last three days, please use -3 day
+
+![1684851901101](assets/1684851901101.png)
+
+
+
+## Acknowledgements
+
+Thanks to the author of the two pendants and to the author of Siyuan.

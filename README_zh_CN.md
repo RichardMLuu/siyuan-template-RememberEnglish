@@ -16,7 +16,7 @@
 
 随手记下一个单词，使用快捷键[[]] 或者UI创建以该单词为标题的新页面。
 
-![img1.png (1387×342) (gitee.io)](https://nuistzpz.gitee.io/static/siyuan/template/RememberEnglish//2023-05-22_101741.png)
+![](assets/2023-05-22_101741.png)
 
 
 
@@ -26,13 +26,13 @@
 
 每个单词写在一个单独页面，用于记录该单词的所有信息。
 
-![img1.png (1387×342) (gitee.io)](https://nuistzpz.gitee.io/static/siyuan/template/RememberEnglish/1684721435700.png)
+![](assets/1684721435700.png)
 
 使用双向链接，可以跳转到相关单词页面，也可以看到哪些单词与此相关。
 
 以template为例，我在其他地方的句子引用了template，不需要我手动添加这个句子到template的例句中，我也能找到我以前使用过的template例句。
 
-![img1.png (1387×342) (gitee.io)](https://nuistzpz.gitee.io/static/siyuan/template/RememberEnglish/1684721176339-1684724617183.png)
+![](assets/1684721176339-1684724617183.png)
 
 使用SQL查询已记录的单词，形成自己的专属单词本。提供查找全部单词、最近N天创建、最近N天更新、按照字母排序查找等模板。
 
@@ -62,7 +62,7 @@ type = "d" 中的d代表文档块
 
 使用limit 1000是因为，思源默认只返回64个。若你的单词库超过了1000，请替换成更大的数字。下同
 
-![img1.png (1387×342) (gitee.io)](https://nuistzpz.gitee.io/static/siyuan/template/RememberEnglish/1684851769970.png)
+![](assets/1684851769970.png)
 
 
 
@@ -70,13 +70,13 @@ type = "d" 中的d代表文档块
 
 将content like "a%"的a替换为你想找的字母即可
 
-![img1.png (1387×342) (gitee.io)](https://nuistzpz.gitee.io/static/siyuan/template/RememberEnglish/1684851616465.png)
+![](assets/1684851616465.png)
 
 #### 最近N日创建的单词
 
 将-1 day的-1替换为你想要的日期即可，如最近三天请使用-3 day
 
-![img1.png (1387×342) (gitee.io)](https://nuistzpz.gitee.io/static/siyuan/template/RememberEnglish/1684851901101.png)
+![](assets/1684851901101.png)
 
 
 

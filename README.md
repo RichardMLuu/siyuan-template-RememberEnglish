@@ -16,7 +16,7 @@ Using backlinks allows us to remember words anywhere without the clutter of not 
 
 Jot down a word on the fly and use the shortcut [[]] or UI to create a new page with that word as the title.
 
-![img1.png (1387×342) (gitee.io)](https://nuistzpz.gitee.io/static/siyuan/template/RememberEnglish/img1.png) 
+![](assets/2023-05-22_101741.png) 
 
 
 
@@ -26,13 +26,13 @@ Jot down a word on the fly and use the shortcut [[]] or UI to create a new page 
 
 Each word is written on a separate page that is used to record all information about that word.
 
-![img1.png (1387×342) (gitee.io)](https://nuistzpz.gitee.io/static/siyuan/template/RememberEnglish/1684721435700.png)
+![](assets/1684721435700.png)
 
 Using the two-way links, you can jump to the related words page and also see which words are related to it.
 
 Take template for example, I have sentences elsewhere that reference template without me having to manually add this sentence to the example sentence in template, and I can find example sentences in template that I have used before.
 
-![img1.png (1387×342) (gitee.io)](https://nuistzpz.gitee.io/static/siyuan/template/RememberEnglish/1684721176339-1684724617183.png)
+![](assets/1684721176339-1684724617183.png)
 
 Use SQL to query recorded words to form your own unique word book. Provide templates to find all words, created in the last N days, updated in the last N days, alphabetical search, etc.
 
@@ -62,7 +62,7 @@ type = "d" 中的d代表文档块
 
 The limit 1000 is used because, by default, Siyuan only returns 64. If your word bank exceeds 1000, please replace it with a larger number. Same as below
 
-![img1.png (1387×342) (gitee.io)](https://nuistzpz.gitee.io/static/siyuan/template/RememberEnglish/1684851769970.png)
+![](assets/1684851769970.png)
 
 
 
@@ -70,13 +70,13 @@ The limit 1000 is used because, by default, Siyuan only returns 64. If your word
 
 Replace the a in content like "a%" with the letter you are looking for
 
-![img1.png (1387×342) (gitee.io)](https://nuistzpz.gitee.io/static/siyuan/template/RememberEnglish/1684851616465.png)
+![](assets/1684851616465.png)
 
 #### Words created in the last N days
 
 Replace -1 of -1 day with the date you want, such as the last three days, please use -3 day
 
-![img1.png (1387×342) (gitee.io)](https://nuistzpz.gitee.io/static/siyuan/template/RememberEnglish/1684851901101.png)
+![](assets/1684851901101.png)
 
 
 
